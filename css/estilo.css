@@ -1,123 +1,589 @@
-/* variables */
+/* ==========================================
+   VARIABLES Y TEXTOS GENERALES - AC PASTELERÍA
+   ========================================== */
+
+/* Fondo general de la página (Beige tirando a marroncito muy clarito) */
+body {
+  background-color: #f2ede4 !important;
+  color: #362417 !important; /* Marrón oscuro chocolate para textos */
+  font-family: "Tahoma", sans-serif;
+}
+
+/* Forzar que todos los títulos y textos predeterminados usen el marrón oscuro */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: #362417;
+}
+
 .col-lg-6 h1 {
-  color: grey; }
+  color: #362417; 
+}
 
 .texto__encabezado {
-  color: white;
+  color: #362417;
   font-size: 20px;
-  text-align: center; }
-  @media only screen and (max-width: 768px) {
-    .texto__encabezado {
-      color: grey; } }
+  text-align: center; 
+}
+
+@media only screen and (max-width: 768px) {
+  .texto__encabezado {
+    color: #362417; 
+  } 
+}
 
 .black {
-  color: black; }
+  color: black; 
+}
 
 .white {
-  color: white; }
+  color: white; 
+}
 
 .grey {
-  color: grey; }
+  color: #362417; 
+}
 
 .form {
   width: 100%;
-  margin: auto; }
+  margin: auto; 
+}
 
 .col-lg-6 p {
-  font-size: 20 px;
-  font-family: "tahoma";
-  font-weight: bold; }
+  font-size: 20px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold; 
+}
 
 .modificar {
-  color: #6b7177;
+  color: #362417;
   text-decoration: none;
-  background-color: transparent; }
+  background-color: transparent; 
+}
 
-body {
-  background-color: #f4f5f2; }
-  @media only screen and (min-width: 1024px) {
-    body h1 {
-      font-size: 50px; }
-    body h2 {
-      font-size: 4em;
-      color: grey;
-      text-align: center; }
-    body p {
-      color: grey; } }
+/* ==========================================
+   TIPOGRAFÍA RESPONSIVE PARA EL BODY
+   ========================================== */
+@media only screen and (min-width: 1024px) {
+  body h1 {
+    font-size: 50px; 
+  }
+  body h2 {
+    font-size: 4em;
+    color: #362417;
+    text-align: center; 
+  }
+  body p {
+    color: #362417; 
+  } 
+}
 
-body {
-  background-color: #f4f5f2; }
-  @media only screen and (max-width: 768px) {
-    body h1 {
-      font-size: 30px; }
-    body h2 {
-      font-size: 12px;
-      color: grey;
-      text-align: center; }
-    body p {
-      font-size: 15px;
-      color: grey; }
-    body .achicar {
-      justify-content: center;
-      width: 200px;
-      height: 150px;
-      left: 0;
-      top: 0;
-      overflow: hidden; } }
+@media only screen and (max-width: 768px) {
+  body h1 {
+    font-size: 30px; 
+  }
+  body h2 {
+    font-size: 1.5rem;
+    color: #362417;
+    text-align: center; 
+  }
+  body p {
+    font-size: 15px;
+    color: #362417; 
+  }
+  body .achicar {
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    left: 0;
+    top: 0;
+    overflow: hidden; 
+  } 
+}
 
-/*map-get*/
-div {
-  background-color: #f4f5f2;
-  text-align: center;
-  padding: 1rem;
-  font-size: 35px;
-  color: grey; }
-
+/* ==========================================
+   CLASES DE UTILIDAD Y COMPONENTES
+   ========================================== */
 .paddingTB {
-  padding: 50px 0; }
+  padding: 50px 0; 
+}
 
 .paddingLR {
-  padding: 0 20PX; }
-
-div {
-  background-color: #f4f5f2;
-  text-align: center;
-  padding: 1rem;
-  font-size: 20px;
-  color: grey; }
+  padding: 0 20px; 
+}
 
 .grupo {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1.35fr; }
+  grid-template-columns: 1fr 1.35fr; 
+}
 
 .input {
-  text-align: left; }
+  text-align: left; 
+}
 
 .input input {
-  border: 0.1px solid #0009; }
+  border: 1px solid rgba(54, 36, 23, 0.2); 
+}
 
 .label {
-  text-align: right; }
+  text-align: right; 
+}
 
 textarea {
   resize: none;
   width: 240px;
-  height: 130px; }
+  height: 130px; 
+}
 
 @media only screen and (max-width: 425px) {
   .grupo {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr; 
+  }
   .label {
-    text-align: center; }
+    text-align: center; 
+  }
   .input {
-    text-align: center; } }
+    text-align: center; 
+  } 
+}
 
 .redess {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  list-style: none; }
+  list-style: none; 
+}
 
 .espacio {
-  padding: 20px; }
+  padding: 20px; 
+}
+
+/* ==========================================
+   NAVEGACIÓN Y FOOTER (Tono Marrón Clarito)
+   ========================================== */
+.main__nav {
+  background-color: #e3d5c6 !important; /* Marrón clarito */
+  border: 1px solid #d4c5b2;
+}
+
+.main__nav .nav-link, 
+.main__nav .navbar-brand span {
+  color: #362417 !important; /* Letras marrón oscuro */
+}
+
+.main__nav .nav-link:hover {
+  color: #6f4e37 !important;
+}
+
+footer {
+  background-color: #e3d5c6 !important; /* Marrón clarito */
+  color: #362417 !important;
+  border-top: 1px solid #d4c5b2 !important;
+}
+
+footer a {
+  color: #362417 !important;
+}
+
+footer a:hover {
+  color: #6f4e37 !important;
+}
+
+/* ==========================================
+   CARRUSEL: Altura y encuadre de fotos
+   ========================================== */
+.img__carousel {
+  height: 520px;
+  object-fit: cover;
+}
+
+.img__carousel--top {
+  object-position: top center;
+}
+
+.img__carousel--center {
+  object-position: center center;
+}
+
+.img__carousel--bottom {
+  object-position: bottom center;
+}
+
+.carousel-overlay {
+  background-color: rgba(60, 40, 25, 0.7); 
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+.carousel-caption p {
+  color: #ffffff !important; 
+  opacity: 0.95; 
+  font-weight: 500; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+@media only screen and (max-width: 576px) {
+  .img__carousel {
+    height: 250px;
+  }
+}
+
+/* ==========================================
+   TARJETAS INTERACTIVAS (NUESTRA ESENCIA)
+   ========================================== */
+.card-interactiva {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(54, 36, 23, 0.1);
+  background-color: #ffffff;
+}
+
+.card-interactiva .contenido-oculto {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card-interactiva:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(54, 36, 23, 0.15) !important;
+  background-color: #fff9f5 !important;
+}
+
+.card-interactiva:hover .contenido-oculto {
+  max-height: 150px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.img__carousel--contain {
+  object-fit: contain !important;
+  background-color: #ffffff; 
+}
+
+.card-interactiva__img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-interactiva:hover .card-interactiva__img {
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   ESTILOS PARA LOS BOTONES DE RECETAS
+   ========================================== */
+#recetasTab .nav-link {
+  background-color: #e3d5c6 !important;
+  color: #362417 !important;
+  border: 1px solid #d4c5b2 !important;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+#recetasTab .nav-link:hover {
+  background-color: #d4c5b2 !important;
+}
+
+#recetasTab .nav-link.active {
+  background-color: #6f4e37 !important;
+  color: #ffffff !important;
+  border-color: #6f4e37 !important;
+}
+
+ /* ==========================================
+        ESTILOS DE PALETA DE COLOR AC PASTELERÍA
+        ========================================== */
+    body {
+      background-color: #f2ede4 !important;
+      color: #362417 !important;
+    }
+
+    /* Forzar marrón oscuro en títulos y textos generales */
+    h1, h2, h3, h4, h5, h6, p, span, .text-muted {
+      color: #362417 !important;
+    }
+
+    /* Barra de navegación unificada en marrón clarito */
+    .main__nav {
+      background-color: #e3d5c6 !important;
+      border: 1px solid #d4c5b2;
+    }
+
+    .main__nav .nav-link, 
+    .main__nav .navbar-brand span {
+      color: #362417 !important;
+      font-weight: bold;
+    }
+
+    .main__nav .nav-link:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* Estilos para los cuadros de historia */
+    .cuadro-historia {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .cuadro-historia:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(111, 78, 55, 0.2) !important;
+    }
+
+    .cuadro-historia:hover .foto-efecto {
+      transform: scale(1.06);
+    }
+
+    .foto-efecto {
+      transition: transform 0.4s ease;
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .text-marron {
+      color: #6f4e37 !important;
+    }
+
+    /* Estilos para las tarjetas de esencia */
+    .card-interactiva {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+    }
+
+    .card-interactiva:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(111, 78, 55, 0.15) !important;
+    }
+
+    .card-interactiva__img {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card-interactiva:hover .card-interactiva__img {
+      transform: scale(1.05);
+    }
+
+    /* Estilo para las imágenes del carrusel en la tarjeta */
+    .carousel-item img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Pie de página unificado */
+    footer {
+      background-color: #e3d5c6 !important;
+      border-top: 1px solid #d4c5b2 !important;
+    }
+
+    footer a {
+      color: #362417 !important;
+    }
+
+     /* ==========================================
+       ESTILOS DE PALETA DE COLOR - PRODUCTOS
+       ========================================== */
+    body {
+      background-color: #f2ede4 !important;
+      color: #362417 !important;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    /* FORZAR MARRÓN OSCURO CHOCOLATE EN TÍTULOS Y TEXTOS */
+    h1, h2, h3, h4, h5, h6, p, span, .text-muted, .card-body h3 {
+      color: #362417 !important;
+    }
+
+    /* Barra de navegación unificada en marrón clarito */
+    .main__nav {
+      background-color: #e3d5c6 !important;
+      border: 1px solid #d4c5b2;
+    }
+
+    .main__nav .nav-link, 
+    .main__nav .navbar-brand span {
+      color: #362417 !important;
+      font-weight: bold;
+    }
+
+    .main__nav .nav-link:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* FORZAMOS LA CUADRÍCULA PARA EVITAR VIÑETAS */
+    .row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      list-style: none !important;
+      padding: 0 !important;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    /* Estilos de las tarjetas (recuadros) */
+    .producto-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(54, 36, 23, 0.1) !important;
+      border-radius: 12px !important;
+      overflow: hidden;
+      background-color: #fff !important;
+      margin-bottom: 20px;
+    }
+
+    /* Efecto al pasar el mouse (Hover) */
+    .producto-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(54, 36, 23, 0.2) !important;
+    }
+
+    /* Zoom suave en la imagen */
+    .producto-card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      transition: transform 0.4s ease;
+      height: 230px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .text-marron {
+      color: #6f4e37 !important;
+    }
+
+    /* Pie de página unificado idéntico al nav */
+    footer {
+      background-color: #e3d5c6 !important;
+      border-top: 1px solid #d4c5b2 !important;
+    }
+
+    footer a {
+      color: #362417 !important;
+    }
+
+    footer a:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* ==========================================
+       ESTILOS DE PALETA DE COLOR - CONTACTO
+       ========================================== */
+    body {
+      background-color: #f2ede4 !important;
+      color: #362417 !important;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    /* FORZAR MARRÓN OSCURO CHOCOLATE EN TÍTULOS Y ETIQUETAS */
+    h1, h2, h3, h4, h5, h6, label, p, span, .text-muted {
+      color: #362417 !important;
+    }
+
+    /* Barra de navegación unificada en marrón clarito */
+    .main__nav {
+      background-color: #e3d5c6 !important;
+      border: 1px solid #d4c5b2;
+    }
+
+    .main__nav .nav-link, 
+    .main__nav .navbar-brand span {
+      color: #362417 !important;
+      font-weight: bold;
+    }
+
+    .main__nav .nav-link:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* Estilos personalizados para inputs y textarea redondeados y marroncitos */
+    .form-control-marron {
+      border: 1px solid #6f4e37 !important;
+      border-radius: 8px !important;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    /* Efecto cuando hacés clic para escribir */
+    .form-control-marron:focus {
+      border-color: #523927 !important;
+      box-shadow: 0 0 0 0.2rem rgba(111, 78, 55, 0.25) !important;
+    }
+
+    /* Botón de WhatsApp */
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #ffffff !important;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #20ba5a;
+      transform: scale(1.01);
+    }
+
+    /* Pie de página unificado */
+    footer {
+      background-color: #e3d5c6 !important;
+      border-top: 1px solid #d4c5b2 !important;
+    }
+
+    footer a {
+      color: #362417 !important;
+    }
+
+    footer a:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* ==========================================
+       ESTILOS DE PALETA DE COLOR - UBICACIÓN
+       ========================================== */
+    body {
+      background-color: #f2ede4 !important;
+      color: #362417 !important;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    /* FORZAR MARRÓN OSCURO CHOCOLATE EN TÍTULOS Y TEXTOS */
+    h1, h2, h3, h4, h5, h6, p, span, .text-muted, .lead {
+      color: #362417 !important;
+    }
+
+    /* Barra de navegación unificada en marrón clarito */
+    .main__nav {
+      background-color: #e3d5c6 !important;
+      border: 1px solid #d4c5b2;
+    }
+
+    .main__nav .nav-link, 
+    .main__nav .navbar-brand span {
+      color: #362417 !important;
+      font-weight: bold;
+    }
+
+    .main__nav .nav-link:hover {
+      color: #6f4e37 !important;
+    }
+
+    /* Pie de página unificado idéntico al nav */
+    footer {
+      background-color: #e3d5c6 !important;
+      border-top: 1px solid #d4c5b2 !important;
+    }
+
+    footer a {
+      color: #362417 !important;
+    }
+
+    footer a:hover {
+      color: #6f4e37 !important;
+    }

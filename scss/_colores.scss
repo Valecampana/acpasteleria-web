@@ -1,32 +1,85 @@
-/* variables */
-$gris:grey;
-$negro:rgb(0,0,0);
-$pDesktop:20 px;
+/* ==========================================
+   VARIABLES Y CONFIGURACIÓN - AC PASTELERÍA
+   ========================================== */
+$gris: grey;
+$negro: rgb(0,0,0);
+
+/* Nuevos tonos: Fondo marroncito muy clarito y letras marrón oscuro */
+$fondoBeige: #f2ede4;       /* Fondo beige tirando a marroncito muy clarito */
+$marronClaro: #e3d5c6;      /* Marroncito claro para el nav y footer */
+$marronOscuro: #362417;     /* Marrón oscuro chocolate para textos y títulos */
+$marronAcento: #6f4e37;     /* Marrón principal para botones o hovers */
+
+$pDesktop: 20px;
 $fontFamily: "tahoma";
 
-
-.col-lg-6{
-	h1{color: $gris;}
+/* Estilos globales */
+body {
+    background-color: $fondoBeige !important;
+    color: $marronOscuro !important;
+    font-family: $fontFamily;
 }
 
-.texto{
-	&__encabezado{color: white;
-		font-size: 20px;
-		text-align: center;
-		@media only screen and(max-width: 768px){
-			color:$gris;
-		}
-                 }
+/* Forzar que todos los títulos y textos principales tengan el marrón oscuro */
+h1, h2, h3, h4, h5, h6, p, span {
+    color: $marronOscuro;
+}
 
+/* Barra de navegación */
+.main__nav {
+    background-color: $marronClaro !important;
+    border: 1px solid #d4c5b2;
+    
+    .nav-link, .navbar-brand span {
+        color: $marronOscuro !important;
+        font-family: $fontFamily;
+        font-weight: bold;
+        
+        &:hover {
+            color: $marronAcento !important;
+        }
+    }
+}
+
+.col-lg-6 {
+    h1 {
+        color: $gris;
+    }
+}
+
+.texto {
+    &__encabezado {
+        color: white;
+        font-size: $pDesktop;
+        text-align: center;
+        
+        @media only screen and (max-width: 768px) {
+            color: $gris;
+        }
+    }
 }
 
 @each $color in black, white, grey {
-	.#{$color}{
-		color:#{$color};
-	}
+    .#{$color} {
+        color: #{$color};
+    }
 }
 
-.form{
-	width: 100%;
-	margin: auto;
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+/* Footer con el tono marrón clarito armónico */
+footer {
+    background-color: $marronClaro !important;
+    color: $marronOscuro !important;
+    border-color: #d4c5b2 !important;
+
+    a {
+        color: $marronOscuro !important;
+        &:hover {
+            color: $marronAcento !important;
+        }
+    }
 }

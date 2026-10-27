@@ -3,90 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Productos - ACPASTELERIA & CAFÉ</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../assets/imagen/portada1.jpg" type="image/x-icon">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
-  <link rel="shortcut icon" href="../assets/imagen/logo.ico" type="image/x-icon">
-  <title>ACPASTELERIA</title>
 
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-lg-12 texto">
-         <nav class="main__nav navbar navbar-expand-lg navbar-light bg-light container-fluid">
+
+  <div class="container my-3">
+    <!-- Encabezado y Navegación unificados -->
+    <header class="row">
+      <div class="col-12">
+        <nav class="main__nav navbar navbar-expand-lg navbar-light rounded shadow-sm">
+          
+          <!-- Logo y título integrados a la izquierda -->
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../assets/imagen/portada1.jpg" alt="portada" class="rounded mr-2" style="height: 40px; width: auto; object-fit: cover;">
+          </a>
+
+          <!-- Botón responsive para celulares -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- Links de navegación alineados a la derecha -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link font-weight-bold" href="productos.html">Productos <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ac.html">AC</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="productos.html">PRODUCTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              <li class="nav-item">
-                <a class="nav-link" href="ubicacion.html">UBICACION</a>
-              </li>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item">PRODUCTOS</a>
-                <a class="dropdown-item" href="#"></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" >UBICACION</a>
-              </div>
+                <a class="nav-link" href="ubicacion.html">Ubicación</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-            </form>
           </div>
-          <img src="../assets/imagen/portada.jpeg" alt="portada" class="img-fluid" width="300" height="200">
         </nav>
       </div>
-    </div>
-        <h1>NUESTROS PRODUCTOS</h1>
-        <p>Los invitamos a descubrir las delicias de nuestra carta y a encontrar los detalles en nuestras vitrinas con lo mejor de los clásicos de la pastelería francesa, de los dulces tradicionales de Argentina.</p>
-    </div>
-    <div>
-      <img src="../assets/imagen/pasteleria (1).jpeg" width="300px" HSPACE="10" VSPACE="10" class="ver">
-      <img src="../assets/imagen/pasteleria (2).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (3).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (4).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (5).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (6).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (7).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (8).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (9).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (10).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (11).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (12).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (13).jpeg" width="300px" HSPACE="10" VSPACE="10">
-      <img src="../assets/imagen/pasteleria (14).jpeg" width="300px" HSPACE="10" VSPACE="10">
-    </div>
-    </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="mt-4">
+      
+      <!-- Título y Presentación -->
+      <div class="text-center py-3 mb-4">
+        <h1 class="font-weight-bold">NUESTROS PRODUCTOS</h1>
+      </div>
+
+      <!-- CUADRÍCULA DE PRODUCTOS -->
+      <div class="row">
+        
+        <!-- 1. Key Lime Pie -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/8.png" class="card-img-top rounded" alt="Key Lime Pie">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Key Lime Pie</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa de galletas de vainilla, limas de estación y crema chantilly.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Tarta de Frutillas -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/9.png" class="card-img-top rounded" alt="Tarta de Frutillas">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta de Frutillas</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Base de masa sablé, generosa capa de dulce de leche repostero, mermelada de frutillas casera y frutillas frescas.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Tarta Frutal -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/10.png" class="card-img-top rounded" alt="Tarta Frutal">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta Frutal</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Base de masa sablé, crema chantilly y frutas de estación cortadas.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Pavlova -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/12.png" class="card-img-top rounded" alt="Pavlova">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Pavlova</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Merengue, dulce de leche repostero, crema chantilly y frutas de estación.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Tarta de Manzana -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/14.png" class="card-img-top rounded" alt="Tarta de Manzana">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta de Manzana</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa sablé, relleno de manzana caramelizada.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Tarta Oreo -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/17.png" class="card-img-top rounded" alt="Tarta Oreo">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta Oreo</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Base de galletas Oreo trituradas, relleno de dulce de leche repostero y crema chantilly con galletas Oreo.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Tarta Franui -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/16.png" class="card-img-top rounded" alt="Tarta Franui">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta Franui</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa sablé, relleno de dulce de leche, crema chantilly y decorado con franui y frutos rojos.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Tarta Cabsha -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/foto 4.jpeg" class="card-img-top rounded" alt="Tarta Cabsha">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta Cabsha</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa sablé, rellena de dulce de leche repostero, ganache de chocolate amargo.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Chocolate blanco y nuez -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/foto 3.jpeg" class="card-img-top rounded" alt="Tarta de chocolate blanco y nuez">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta de Chocolate Blanco y Nuez</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa sablé de vainilla, relleno de dulce de leche repostero, ganache de chocolate blanco y nueces rotas.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Torta Matilda -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/13.png" class="card-img-top rounded" alt="Torta Matilda">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Torta Matilda</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Bizcochuelo húmedo de chocolate, relleno de dulce de leche repostero y cubierta de ganache de chocolate amargo.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Torta Frida -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/28.png" class="card-img-top rounded" alt="Torta Frida">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Torta Frida</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Masa sablé de almendras, relleno de dulce de leche repostero y crema chantilly con frutos rojos.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Carrot Cake -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/foto 7.png" class="card-img-top rounded" alt="Carrot Cake">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Carrot Cake</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Bizcochuelo húmedo de zanahoria, relleno de frosting de queso.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Tarta de Ricotta -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/foto 1.jpeg" class="card-img-top rounded" alt="Tarta de Ricotta y Arándanos">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Tarta de Ricotta y Arándanos</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Ricotta y arándanos frescos.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Budín de limón -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/11.png" class="card-img-top rounded" alt="Budin de limon y arandanos">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Budín de Limón y Arándanos</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Limón y arándanos.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Budín Red Velvet -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/19.png" class="card-img-top rounded" alt="Budin Red Velvet">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Budín Red Velvet</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Decorado con glaseado de limón.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Budín de chocolate -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/15.png" class="card-img-top rounded" alt="Budin de chocolate y naranja">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Budín de Chocolate y Naranja</h3>
+                <p class="small mb-3"><strong>Ingredientes:</strong> Chocolate y naranja.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17. Individuales -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            <img src="../assets/imagen/25.png" class="card-img-top rounded" alt="Postres individuales">
+            <div class="card-body text-center d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Postres Individuales</h3>
+                <p class="small mb-3"><strong>Consultar disponibilidad.</strong></p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18. Propuestas Navideñas (Con Carrusel) -->
+        <div class="col-md-4 mb-4">
+          <div class="card producto-card shadow-sm h-100 p-2">
+            
+            <!-- Mini Carrusel dentro de la tarjeta -->
+            <div id="carouselNavidad" class="carousel slide rounded overflow-hidden" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../assets/imagen/21.png" class="d-block w-100 rounded" style="height: 230px; object-fit: cover;" alt="Pan Dulce Relleno">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/imagen/22.png" class="d-block w-100 rounded" style="height: 230px; object-fit: cover;" alt="Torta Galesa">
+                </div>
+              </div>
+              <!-- Controles de flechitas para pasar las fotos -->
+              <a class="carousel-control-prev" href="#carouselNavidad" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselNavidad" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+
+            <div class="card-body text-center d-flex flex-column justify-content-between px-2 pb-2 pt-3">
+              <div>
+                <h3 class="h5 font-weight-bold mb-2">Propuestas Navideñas</h3>
+                <p class="small mb-3"><strong>Incluye:</strong> Pan dulce relleno y torta galesa artesanal.</p>
+              </div>
+              <p class="text-marron font-italic small m-0">Elaboración 100% fresca en el día.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sección Encargos / Contacto -->
+      <section class="bg-white rounded shadow-sm p-4 my-5" style="border-left: 6px solid #6f4e37 !important;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="h4 font-weight-bold mb-2" style="color: #362417 !important;">🎂 ¿QUERÉS ENCARGAR TU TORTA O ESPECIALIDAD?</h3>
+            <p class="mb-0">
+              Hacé tu pedido con anticipación para cumpleaños, eventos o simplemente para darte un gustito. Escribinos a través de nuestro formulario y combinamos los detalles de tu elección.
+            </p>
+          </div>
+          <div class="col-md-4 text-center mt-3 mt-md-0">
+            <a href="contacto.html" class="btn text-white px-4 py-2 font-weight-bold shadow-sm" style="background-color: #6f4e37;">Encargar Ahora</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </div>
-  <h2>Te invitamos a disfrutar nuestras creaciones en la intimidad de nuestro café</h2>
-  <p class="col-lg-6">CAFÉ RUIZ</p>
-  <p class="col-lg-6">Cafe con torrado que es un café intenso con notas amargas y de un gusto que da ganas de inventar excusas para poder tomar más café, ideal para combinar con algo dulce.</p>
-  <footer>
-    <ul class="redess">
-      <li class="espacio"><a href="pages/contacto.html" class="modificar">CONTACTO</a></li>
-      <li>
-        <a href="https://www.instagram.com/ac.pasteleria_y_cafe/?hl=es" target="_blank"><img src="../assets/imagen/instagram.png" width="55px"></a>
-      </li>
-      <li class="espacio"><a href="https://www.facebook.com/ac.pasteleria1/" target="_blank"><img src="../assets/imagen/facebook.png"></a></li>
-    </ul>
+
+  <!-- Pie de página unificado -->
+  <footer class="text-center py-4 mt-5 border-top">
+    <div class="container">
+      <ul class="list-inline mb-0 d-flex justify-content-center align-items-center">
+        <li class="list-inline-item mr-4">
+          <a href="contacto.html" class="font-weight-bold text-decoration-none">Contacto</a>
+        </li>
+        <li class="list-inline-item mr-3">
+          <a href="https://www.instagram.com/ac.pasteleria_y_cafe/?hl=es" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/imagen/instagram.png" width="35" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
+
+  <!-- Scripts de Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
